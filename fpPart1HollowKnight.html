@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hollow Knight</title>
+        <link rel="stylesheet" type = text/css href="fpPart1GamePage.css">
+        <script type="text/javascript" src="finalProjectPart2.js" defer></script>
+    </head>
+    <body>
+        <!-- Header is inside a tag to make the whole header clickable. -->
+        <a href = "finalProjectPart1.html" class = "headerLink">
+            <header>
+                <h1>Better Reviews</h1>
+            </header>
+        </a>
+        <br>
+        
+        <div class = "main">
+            <div class = "gameTitle">
+                Hollow Knight
+            </div>
+        
+            <div class="rating" id="ratingDisplay">
+                98
+            </div>
+            
+            <!-- Section for the review of the game in words -->
+            <div class = "review">
+                <ul>
+                    <li>Hollow Knight is a masterclass in 2D action-adventure design, offering players an intricately crafted world teeming with mystery, challenge, and atmosphere. Set in the ruined kingdom of Hallownest, the game immediately pulls players in with its stunning hand-drawn art style and hauntingly beautiful soundtrack. The world design is both expansive and interconnected, encouraging exploration and rewarding persistence with hidden areas, secret paths, and upgrades. Every nook and cranny feels like it holds a story waiting to be discovered, creating an experience that is as much about exploration as it is about combat.</li>
+                    
+                    <li>The combat system in Hollow Knight is precise and fluid, allowing players to quickly adapt to its tight controls and face a variety of enemies with different patterns and attacks. While combat is a central component, the platforming elements are equally challenging and satisfying, requiring players to master their movement abilities to traverse increasingly difficult environments. Boss battles are a standout, each one demanding a deep understanding of their patterns and delivering a real sense of accomplishment upon victory. The game’s difficulty is certainly high, but it’s never unfair, making every defeat a learning opportunity and every victory a moment of triumph.</li>
+                    
+                    <li>Where Hollow Knight shines the most is in its atmosphere and sense of discovery. The minimalistic storytelling, delivered through cryptic dialogue, environmental clues, and subtle world-building, allows players to piece together the lore at their own pace. The deep emotional weight carried by the world and its characters adds to the immersion. Minor gripes, like occasional moments of getting lost due to the lack of detailed maps or the steep difficulty curve early on, prevent it from being perfect. However, with its tight gameplay, rich world, and unforgettable art direction, Hollow Knight easily deserves a score of 98/100.</li>
+                </ul>
+            </div>
+            
+            <figure>
+                <!-- Link for image causes warning in comment, so it can be found in provided docx file -->
+                <img src="HollowKnightGamepPlayjpg.jpg" alt="Hollow Knight Gameplay">
+            </figure>
+            
+            <figure>
+                <!-- Image is from thumbnail of https://www.youtube.com/watch?v=t3-EcohG8Fw -->
+                <img src="HollowKnightBossFight.jpg" alt="Hollow Knight Boss Fight">
+            </figure>
+
+            <button id="toggleReview" onclick="reviewFormVisibilityToggle()">Show/Hide Review Submission</button>
+
+        </div>
+
+        <div class="userReviewArea">
+            <!-- User Submission Form -->
+            <div class="reviewForm">
+                <h2>Submit Your Review</h2>
+                <form id="userReviewForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required><br>
+
+                    <label for="userRating">Rating (0-100):</label>
+                    <input type="number" id="userRating" min="0" max="100" placeholder="Enter your rating" required><br>
+
+                    <label for="userReview">Full Review:</label>
+                    <textarea id="userReview" rows="4" placeholder="Write your review here..." required></textarea><br>
+
+                    <button type="button" id="submitReview" onclick="reviewSubmission()">Submit</button>
+                </form>
+            </div>
+
+            <!-- Container for dynamically added user reviews -->
+            <div id="userReviewsContainer">
+                <h2>User Reviews</h2>
+            </div>
+        </div>
+        
+        <!-- Footer with email for users of website to contact me with. -->
+        <a href="mailto:ddaduku@albany.edu" title = "ddaduku@albany.edu" class="footerLink">
+            <footer>
+                Contact Us!
+            </footer>
+        </a>
+        
+    </body>
+    
+    
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Elden Ring</title>
+        <link rel="stylesheet" type = text/css href="fpPart1GamePage.css">
+        <script type="text/javascript" src="finalProjectPart2.js" defer></script>
+    </head>
+    <body>
+        <!-- Header is inside a tag to make the whole header clickable. -->
+        <a href = "finalProjectPart1.html" class = "headerLink">
+            <header>
+                <h1>Better Reviews</h1>
+            </header>
+        </a>
+        <br>
+        
+        <div class = "main">
+            <div class = "gameTitle">
+                Elden Ring
+            </div>
+        
+            <div class="rating" id="ratingDisplay">
+                99
+            </div>
+            
+            <!-- Section for the review of the game in words -->
+            <div class = "review">
+                <ul>
+                    <li>Elden Ring is a monumental achievement in the world of action role-playing games, blending the best elements of FromSoftware’s previous titles with a sprawling open-world setting. The game offers an expansive, immersive world called the Lands Between, where players are free to explore at their own pace, uncover hidden secrets, and engage in strategic combat. The sheer scale of the environment is breathtaking, with diverse biomes, intricate dungeons, and towering landmarks that invite curiosity and awe. Every corner of the world feels alive and meticulously crafted, encouraging exploration without hand-holding.</li>
+                    
+                    <li>The gameplay mechanics in Elden Ring strike a perfect balance between difficulty and reward. Fans of Dark Souls will feel right at home with the precise combat system, which rewards patience, strategy, and skill. The addition of horseback riding and mounted combat adds a fresh dynamic to encounters, allowing for faster traversal and more versatile approaches to battles. The game's rich lore, co-written by Game of Thrones author George R.R. Martin, deepens the narrative experience, giving players a world full of mystery and intrigue to uncover as they journey through its various regions.</li>
+                    
+                    <li>Where Elden Ring excels beyond expectations is in its ability to offer freedom without sacrificing structure. Whether you choose to follow the main storyline or become engrossed in side quests, you’re constantly rewarded with meaningful progression and discovery. The art direction and atmospheric music heighten the sense of grandeur and danger that permeates the world. Although a near-perfect experience, the occasional performance hiccups or minor technical issues prevent it from receiving a full 100, but they are far from game-breaking. With an astounding depth of gameplay and world-building, Elden Ring earns a well-deserved score of 99/100.</li>
+                </ul>
+            </div>
+            
+            <figure>
+                <!-- Image is from thumbnail of https://www.youtube.com/watch?v=YPKo57SqiiU -->
+                <img src="EldenRingStartingAreaScreenshot.jpg" alt="Elden Ring Gameplay">
+            </figure>
+            
+            <figure>
+                <!-- Image is from thumbnail of https://www.youtube.com/watch?v=MyLCnFbRO6k -->
+                <img src="EldenRingBossFight.jpg" alt="Elden Ring Boss Fight">
+            </figure>
+
+            <button id="toggleReview" onclick="reviewFormVisibilityToggle()">Show/Hide Review Submission</button>
+            
+        </div>
+
+        <div class="userReviewArea">
+            <!-- User Submission Form -->
+            <div class="reviewForm">
+                <h2>Submit Your Review</h2>
+                <form id="userReviewForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required><br>
+
+                    <label for="userRating">Rating (0-100):</label>
+                    <input type="number" id="userRating" min="0" max="100" placeholder="Enter your rating" required><br>
+
+                    <label for="userReview">Full Review:</label>
+                    <textarea id="userReview" rows="4" placeholder="Write your review here..." required></textarea><br>
+
+                    <button type="button" id="submitReview" onclick="reviewSubmission()">Submit</button>
+                </form>
+            </div>
+
+            <!-- Container for dynamically added user reviews -->
+            <div id="userReviewsContainer">
+                <h2>User Reviews</h2>
+            </div>
+        </div>
+
+        <!-- Footer with email for users of website to contact me with. -->
+        <a href="mailto:ddaduku@albany.edu" title = "ddaduku@albany.edu" class="footerLink">
+            <footer>
+                Contact Us!
+            </footer>
+        </a>
+        <!--<script type="text/javascript" src="finalProjectPart2.js"></script>-->
+    </body>
+    
+    
+</html>

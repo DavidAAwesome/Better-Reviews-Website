@@ -1,0 +1,124 @@
+/* Style sheet for Home Page */
+body {
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body fills the viewport */
+    margin: auto;
+}
+
+/* Header for the link to home page */
+header {
+    background-color: darkcyan;
+    padding: 10px 0;
+    text-align: center;
+    height: 150px;
+    border:  5px  #333 solid;
+    font-size: 30px;
+    font-family:fantasy;
+}
+
+/* Adds white border when hovering to signify that it is clickable */
+header:hover {
+    border: 5px white solid;
+}
+
+/* Removes underline and color change in header link */
+.headerLink:visited, .headerLink:hover, .headerLink:active, .headerLink{
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/* All image links are centered because of this nav */
+nav {
+    /*margin: auto;*/
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 0px;
+    flex:1;
+}
+
+/* Tag to hold images and figcaption */
+figure {
+    display:inline-block;
+    width: 26%;
+    height: 270px;
+    background-color: silver;
+}
+
+/* The image themselves with a solid border */
+img {
+    border: 5px #333 solid;
+    display:inline;
+    /*width:100%;*/
+    max-width: 100%;
+    height:auto;
+}
+
+/* Images are white when hovered to signify that they are clickable */
+img:hover {
+    border: 5px white solid;
+}
+
+/* Extra text to show content of image */
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    width: 102%;
+    margin:auto;
+}
+
+/* Holds the link to email */
+footer {
+    margin-top: 5%;
+    padding-top: 20px;
+    background-color: darkcyan;
+    text-align: center;
+    border:  5px  #333 solid;
+    height: 50px;
+    font-size: 20px;
+    font-family:fantasy;
+}
+
+/* Footer is white when hovered to signifiy that it is clickable */
+footer:hover {
+    border: 5px white solid;
+}
+
+/* Removes underline and color change in footer link */
+.footerLink:visited, .footerLink:hover, .footerLink:active, .footerLink{
+    color: inherit; 
+    text-decoration: none; 
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    img {
+        border: 5px #333 solid;
+        /*width:100%;*/
+        max-width: 100%;
+        height:auto;
+        margin-bottom: 0;
+    }
+
+    /* Tag to hold images and figcaption */
+    figure {
+        display:inline-block;
+        width: 26%;
+        height: auto;
+        background-color: silver;
+    }
+}
+
+

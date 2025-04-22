@@ -1,0 +1,108 @@
+/* Style sheet for Game Review Pages */
+body {
+    background-color: silver;
+}
+
+/* Header for the link to home page */
+header {
+    background-color: darkcyan;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    height: 150px;
+    border:  5px  #333 solid;
+    font-size: 30px;
+    font-family:fantasy; 
+}
+
+/* Adds white border when hovering to signify that it is clickable */
+header:hover {
+    border: 5px white solid;
+}
+
+/* Removes underline and color change in header link */
+.headerLink:visited, .headerLink:hover, .headerLink:active, .headerLink{
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/* All image links are centered because of this nav */
+.main {
+    height: 750px;
+}
+
+.gameTitle {
+    background-color: gold;
+    border:  5px  #333 solid;
+    float:left;
+    height: 100px;
+    width: 30%;
+    font-size: 65px;
+    text-align: center;
+    
+}
+
+.rating {
+    background-color: gold;
+    border:  5px  #333 solid;
+    float:left;
+    height: 100px;
+    width: 7%;
+    font-size: 90px;
+    text-align: center;
+    font-family:fantasy; 
+    margin-left: 5.5px;
+}
+
+.review {
+    
+    background-color: darkcyan;
+    color: #333;
+    height: 700px;
+    border:  5px  #333 solid;
+    float: right;
+    width: 60%;
+    font-size: 23px;
+}
+
+/* Tag to hold images and figcaption */
+figure {
+    width: 33%;
+    height: 270px;
+    background-color: silver;
+    float:left;
+}
+
+/* The image themselves with a solid border */
+img {
+    border: 5px #333 solid;
+    display:inline;
+    width:100%;
+    height: 100%;
+}
+
+audio {
+    margin: auto;
+}
+
+/* Holds the link to email */
+footer {
+    padding-top: 20px;
+    background-color: darkcyan;
+    text-align: center;
+    border:  5px  #333 solid;
+    height: 50px;
+    font-size: 20px;
+    font-family:fantasy;
+}
+
+/* Footer is white when hovered to signifiy that it is clickable */
+footer:hover {
+    border: 5px white solid;
+}
+
+/* Removes underline and color change in footer link */
+.footerLink:visited, .footerLink:hover, .footerLink:active, .footerLink{
+    color: inherit; 
+    text-decoration: none; 
+}

@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    background-color: silver;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: darkcyan;
+    padding: 20px;
+    text-align: center;
+    border: 5px #333 solid;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+/* Hover effect for header */
+header:hover {
+    border: 5px white solid;
+}
+
+/* Header link styling */
+.headerLink:visited, .headerLink:hover, .headerLink:active, .headerLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Main content area */
+.main {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    justify-content: space-between; /* Space between content items */
+    gap: 10px; /* Space between elements */
+    padding: 10px;
+}
+
+/* Game title box */
+.gameTitle {
+    background-color: gold;
+    border: 5px #333 solid;
+    flex: 1 1 calc(30% - 20px); /* Flexible width, adjusts to screen size */
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+/* Rating box */
+.rating {
+    background-color: gold;
+    border: 5px #333 solid;
+    flex: 1 1 calc(10% - 20px); /* Flexible width, adjusts to screen size */
+    text-align: center;
+    font-size: 40px;
+    margin-left: 5px;
+    font-family: fantasy;
+}
+
+/* Review section */
+.review {
+    background-color: darkcyan;
+    color: #333;
+    border: 5px #333 solid;
+    flex: 1 1 100%; /* Takes full width on small screens */
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Figure for images */
+figure {
+    flex: 1 1 calc(50% - 20px); /* Images take up 50% of the row, shrink on smaller screens */
+    margin: 10px 0;
+}
+
+img {
+    border: 5px #333 solid;
+    width: 100%; /* Full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: darkcyan;
+    text-align: center;
+    border: 5px #333 solid;
+    font-size: 20px;
+    font-family: fantasy;
+    color: black;
+}
+
+/* Hover effect for footer */
+footer:hover {
+    border: 5px white solid;
+}
+
+/* Footer link styling */
+.footerLink:visited, .footerLink:hover, .footerLink:active, .footerLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: gold;
+    border: none;
+    cursor: pointer;
+    font-family: fantasy;
+    margin:auto;
+    border: 5px #333 solid;
+}
+
+button:hover {
+    border: 5px white solid;
+}
+
+
+/* Styles for the user review form */
+.reviewForm {
+    background-color: darkcyan;
+    border: 5px #333 solid;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    color: black;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.reviewForm label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.reviewForm input, .reviewForm textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Styles for user reviews */
+#userReviewsContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 15px;
+    border: 5px #333 solid;
+}
+
+.userReview {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.userReview h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.userReview p {
+    font-size: 14px;
+    margin: 0;
+}
+
+input, textarea {
+    border: 5px #333 solid;
+}
+
+input:hover, textarea:hover {
+    border: 5px gold solid;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .gameTitle, .rating {
+        flex: 1 1 calc(100% - 20px); /* Stacks title and rating vertically */
+    }
+
+    .review {
+        font-size: 18px; /* Slightly smaller font for smaller screens */
+    }
+
+    figure {
+        flex: 1 1 calc(100% - 20px); /* Images take full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 24px; /* Smaller header font on small screens */
+    }
+
+    .gameTitle, .rating, .review {
+        font-size: 16px; /* Smaller font for readability on mobile */
+    }
+}

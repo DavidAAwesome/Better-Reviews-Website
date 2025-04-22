@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Minecraft</title>
+        <link rel="stylesheet" type = text/css href="fpPart1GamePage.css">
+        <script type="text/javascript" src="finalProjectPart2.js" defer></script>
+    </head>
+    <body>
+        <!-- Header is inside a tag to make the whole header clickable. -->
+        <a href = "finalProjectPart1.html" class = "headerLink">
+            <header>
+                <h1>Better Reviews</h1>
+            </header>
+        </a>
+        <br>
+        
+        <div class = "main">
+            <div class = "gameTitle">
+                Minecraft
+            </div>
+        
+            <div class="rating" id="ratingDisplay">
+                97
+            </div>
+            
+            <!-- Section for the review of the game in words -->
+            <div class = "review">
+                <ul>
+                    <li>Minecraft is a revolutionary sandbox game that has captured the imagination of millions across the globe. Its core appeal lies in its simplicity—players are dropped into a randomly generated, blocky world with the freedom to build, explore, and survive as they see fit. The game’s open-ended nature allows for infinite possibilities, from crafting small homes to constructing massive cities, or even recreating entire fictional worlds. The voxel-based aesthetic, while initially seeming basic, is actually a canvas for creativity, where every block contributes to an evolving landscape of endless potential.</li>
+                    
+                    <li>The gameplay loop is as varied as the players themselves. Some focus on survival mode, where managing resources, battling mobs, and mining for rare materials provides an engaging challenge. Others may find joy in the game’s creative mode, where all restrictions are lifted, allowing for unlimited resources and flight, perfect for builders or those looking to express themselves artistically. The constant updates from developer Mojang continue to add new features, biomes, mobs, and items, keeping the game fresh even for long-time players. Whether playing solo or with friends in multiplayer, the experience is deeply personal and adaptive to each individual’s play style.</li>
+                    
+                    <li>While Minecraft excels in fostering creativity and exploration, there are occasional limitations. The game's minimal guidance can be daunting for new players, and certain technical aspects, like Redstone mechanics, might feel inaccessible without outside resources. However, these elements are far from deal-breakers, as the community-driven nature of Minecraft offers countless tutorials, mods, and inspiration. Its accessibility to players of all ages and skill levels, combined with its nearly limitless potential for creation, earns Minecraft a score of 97/100, firmly solidifying its place as one of the greatest games of all time.</li>
+                </ul>
+            </div>
+            
+            <figure>
+                <!-- Image is from https://sfx.thelazy.net/games/screenshot/67054/full/ -->
+                <img src="MinecraftGamePlay.png" alt="Minecraft Gameplay">
+            </figure>
+            
+            <figure>
+                <!-- Image is from thumbnail of https://www.youtube.com/watch?v=qMUSKzmHqLI -->
+                <img src="MinecraftBossFightjpg.jpg" alt="Minecraft Boss Fight">
+            </figure>
+
+            <button id="toggleReview" onclick="reviewFormVisibilityToggle()">Show/Hide Review Submission</button>
+
+        </div>
+
+        <div class="userReviewArea">
+            <!-- User Submission Form -->
+            <div class="reviewForm">
+                <h2>Submit Your Review</h2>
+                <form id="userReviewForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required><br>
+
+                    <label for="userRating">Rating (0-100):</label>
+                    <input type="number" id="userRating" min="0" max="100" placeholder="Enter your rating" required><br>
+
+                    <label for="userReview">Full Review:</label>
+                    <textarea id="userReview" rows="4" placeholder="Write your review here..." required></textarea><br>
+
+                    <button type="button" id="submitReview" onclick="reviewSubmission()">Submit</button>
+                </form>
+            </div>
+
+            <!-- Container for dynamically added user reviews -->
+            <div id="userReviewsContainer">
+                <h2>User Reviews</h2>
+            </div>
+        </div>
+        
+        <!-- Footer with email for users of website to contact me with. -->
+        <a href="mailto:ddaduku@albany.edu" title = "ddaduku@albany.edu" class="footerLink">
+            <footer>
+                Contact Us!
+            </footer>
+        </a>
+        
+    </body>
+    
+    
+</html>
